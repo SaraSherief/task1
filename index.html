@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+    <style>
+        body{
+            background-color: rgba(7, 43, 225, 0.036);
+            display: flex;
+            justify-content: center;margin-top: 170px;
+        }
+        .box{
+            border: 10px solid;
+            padding: 80px ; 
+            border-radius: 5px;
+            width: 200px;
+            background-color: rgb(139, 118, 142);
+        }
+        .btn { 
+			background:  rgb(52, 129, 187); 
+			border-radius: 7px; 
+			color: #ffff; 
+			padding: 10px 25px; 
+			text-decoration: none; 
+        }
+        .btn:hover{
+            background:rgb(90, 18, 178);
+            color: whitesmoke; 
+        }
+    </style>
+
+<script lang="javascript">
+    function showSum(){
+        var x,y,s;
+        x=Number(document.frmsum.num1.value);
+        y=Number(document.frmsum.num2.value);
+        s=x+y;
+        document.frmsum.sum.value=s;
+    }
+</script>
+</head>
+<body>
+    <form class="box" name="frmsum">
+        <center><h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">SUM</h2></center><br>
+        <label>First Digit:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Enter a number" id="num1" fdprocessedid="ouo9xq"><br><br>
+        <label>Second Digit:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Enter a number" id="num2" fdprocessedid="eb8rj"><br><br>
+        <label>Sum is:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" title="sum" id="sum" fdprocessedid="wal4l"><br><br>
+        <center><input type="button" value="Sum" class="btn" onclick="showSum()" fdprocessedid="dyxqtw"></center>
+    </form>
+
+    
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
